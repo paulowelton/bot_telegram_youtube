@@ -1,0 +1,378 @@
+ 12/02/2025 09:08:50 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 12/02/2025 09:08:50 AM - INFO - bot chamado
+ 12/02/2025 09:08:58 AM - INFO - usuario esta tentando fazer download
+ 12/02/2025 09:09:00 AM - ERROR - A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Unsupported start tag "img" at byte offset 0
+ 12/02/2025 09:11:00 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 12/02/2025 09:11:00 AM - INFO - bot chamado
+ 12/02/2025 09:11:13 AM - INFO - usuario esta tentando fazer download
+ 12/02/2025 09:14:16 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 12/02/2025 09:14:16 AM - INFO - bot chamado
+ 12/02/2025 09:14:48 AM - INFO - usuario esta tentando fazer download
+ 12/02/2025 09:32:28 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 12/02/2025 09:32:28 AM - INFO - bot chamado
+ 12/02/2025 09:32:38 AM - INFO - usuario esta tentando fazer download
+ 12/02/2025 09:35:08 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 12/02/2025 09:35:08 AM - INFO - bot chamado
+ 12/02/2025 09:35:12 AM - INFO - usuario esta tentando fazer download
+ 12/02/2025 10:59:32 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 12/02/2025 10:59:32 AM - INFO - bot chamado
+ 12/02/2025 10:59:39 AM - INFO - usuario esta tentando fazer download
+ 12/02/2025 10:59:44 AM - INFO - baixando audio...
+ 12/02/2025 10:59:48 AM - ERROR - erro ao baixar video: 'charmap' codec can't encode character '\u21b3' in position 1: character maps to <undefined>
+ 12/02/2025 10:59:54 AM - INFO - baixando audio...
+ 12/02/2025 10:59:57 AM - ERROR - Infinity polling exception: [WinError 32] O arquivo já está sendo usado por outro processo: 'C:\\Users\\paulo.welton\\Desktop\\bot_telegram_yt\\audio\\Cuco - Bossa No Sé (Lyric Video) ft. Jean Carter.m4a'
+ 12/02/2025 10:59:57 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 955, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1043, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1118, in __threaded_polling
+    raise e
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 148, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "c:\Users\paulo.welton\Desktop\bot_telegram_yt\src\model\bot.py", line 64, in callback_query
+    apagar_arquivos(path_audio)
+  File "c:\Users\paulo.welton\Desktop\bot_telegram_yt\src\model\apagar_arquivos.py", line 4, in apagar_arquivos
+    os.unlink(caminho)
+PermissionError: [WinError 32] O arquivo já está sendo usado por outro processo: 'C:\\Users\\paulo.welton\\Desktop\\bot_telegram_yt\\audio\\Cuco - Bossa No Sé (Lyric Video) ft. Jean Carter.m4a'
+
+ 12/02/2025 11:23:21 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 12/02/2025 11:23:21 AM - INFO - bot chamado
+ 12/02/2025 12:14:39 PM - INFO - BOT TELEGRAM YOUTUBE
+
+ 12/02/2025 12:14:39 PM - INFO - bot chamado
+ 12/02/2025 12:14:51 PM - INFO - usuario esta tentando fazer download
+ 12/02/2025 12:15:04 PM - ERROR - Infinity polling exception: download_video() missing 1 required positional argument: 'formato'
+ 12/02/2025 12:15:04 PM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 955, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1043, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1118, in __threaded_polling
+    raise e
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 148, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "c:\Users\paulo.welton\Desktop\bot_telegram_yt\src\model\bot.py", line 60, in callback_query
+    download_video(youtube_link)
+TypeError: download_video() missing 1 required positional argument: 'formato'
+
+ 12/02/2025 12:15:30 PM - INFO - BOT TELEGRAM YOUTUBE
+
+ 12/02/2025 12:15:30 PM - INFO - bot chamado
+ 12/02/2025 12:16:00 PM - INFO - usuario esta tentando fazer download
+ 12/02/2025 12:16:05 PM - INFO - baixando audio...
+ 12/02/2025 12:16:08 PM - ERROR - erro ao baixar video: 'charmap' codec can't encode character '\u21b3' in position 1: character maps to <undefined>
+ 13/02/2025 08:49:58 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 13/02/2025 08:49:58 AM - INFO - bot chamado
+ 13/02/2025 08:50:14 AM - INFO - usuario esta tentando fazer download
+ 13/02/2025 08:50:45 AM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: invalid file HTTP URL specified: Wrong port number specified in the URL
+ 13/02/2025 08:50:45 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 148, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "c:\Users\paulo.welton\Desktop\bot_telegram_yt\src\model\bot.py", line 60, in callback_query
+    bot.send_video(message.chat.id, path_video)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 2257, in send_video
+    apihelper.send_video(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 719, in send_video
+    return _make_request(token, method_url, params=payload, files=files, method='post')
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: invalid file HTTP URL specified: Wrong port number specified in the URL
+
+ 13/02/2025 08:52:50 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 13/02/2025 08:52:50 AM - INFO - bot chamado
+ 13/02/2025 08:53:01 AM - INFO - usuario esta tentando fazer download
+ 13/02/2025 08:53:06 AM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: invalid file HTTP URL specified: Wrong port number specified in the URL
+ 13/02/2025 08:53:06 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 148, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "c:\Users\paulo.welton\Desktop\bot_telegram_yt\src\model\bot.py", line 60, in callback_query
+    bot.send_video(message.chat.id, path_video)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 2257, in send_video
+    apihelper.send_video(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 719, in send_video
+    return _make_request(token, method_url, params=payload, files=files, method='post')
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: invalid file HTTP URL specified: Wrong port number specified in the URL
+
+ 13/02/2025 08:55:00 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 13/02/2025 08:55:00 AM - INFO - bot chamado
+ 13/02/2025 08:55:14 AM - INFO - usuario esta tentando fazer download
+ 13/02/2025 08:55:35 AM - ERROR - Infinity polling exception: ('Connection aborted.', timeout('The write operation timed out'))
+ 13/02/2025 08:55:35 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 495, in _make_request
+    conn.request(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 455, in request
+    self.send(chunk)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1001, in send
+    self.sock.sendall(data)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1204, in sendall
+    v = self.send(byte_view[count:])
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1173, in send
+    return self._sslobj.write(data)
+socket.timeout: The write operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 495, in _make_request
+    conn.request(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 455, in request
+    self.send(chunk)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1001, in send
+    self.sock.sendall(data)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1204, in sendall
+    v = self.send(byte_view[count:])
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1173, in send
+    return self._sslobj.write(data)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', timeout('The write operation timed out'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 955, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1043, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1118, in __threaded_polling
+    raise e
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 148, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "c:\Users\paulo.welton\Desktop\bot_telegram_yt\src\model\bot.py", line 60, in callback_query
+    bot.send_video(message.chat.id, video)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 2257, in send_video
+    apihelper.send_video(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 719, in send_video
+    return _make_request(token, method_url, params=payload, files=files, method='post')
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 156, in _make_request
+    result = _get_req_session().request(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', timeout('The write operation timed out'))
+
+ 13/02/2025 08:59:06 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 13/02/2025 08:59:06 AM - INFO - bot chamado
+ 13/02/2025 08:59:15 AM - INFO - usuario esta tentando fazer download
+ 13/02/2025 08:59:35 AM - ERROR - Infinity polling exception: ('Connection aborted.', timeout('The write operation timed out'))
+ 13/02/2025 08:59:35 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 495, in _make_request
+    conn.request(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 455, in request
+    self.send(chunk)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1001, in send
+    self.sock.sendall(data)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1204, in sendall
+    v = self.send(byte_view[count:])
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1173, in send
+    return self._sslobj.write(data)
+socket.timeout: The write operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 495, in _make_request
+    conn.request(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 455, in request
+    self.send(chunk)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1001, in send
+    self.sock.sendall(data)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1204, in sendall
+    v = self.send(byte_view[count:])
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1173, in send
+    return self._sslobj.write(data)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', timeout('The write operation timed out'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 955, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1043, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1118, in __threaded_polling
+    raise e
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 148, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "c:\Users\paulo.welton\Desktop\bot_telegram_yt\src\model\bot.py", line 67, in callback_query
+    bot.send_video(message.chat.id, video)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 2257, in send_video
+    apihelper.send_video(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 719, in send_video
+    return _make_request(token, method_url, params=payload, files=files, method='post')
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 156, in _make_request
+    result = _get_req_session().request(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', timeout('The write operation timed out'))
+
+ 13/02/2025 09:00:21 AM - ERROR - Infinity polling exception: ('Connection aborted.', timeout('The write operation timed out'))
+ 13/02/2025 09:00:21 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 495, in _make_request
+    conn.request(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 455, in request
+    self.send(chunk)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1001, in send
+    self.sock.sendall(data)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1204, in sendall
+    v = self.send(byte_view[count:])
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1173, in send
+    return self._sslobj.write(data)
+socket.timeout: The write operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 495, in _make_request
+    conn.request(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 455, in request
+    self.send(chunk)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1001, in send
+    self.sock.sendall(data)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1204, in sendall
+    v = self.send(byte_view[count:])
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1173, in send
+    return self._sslobj.write(data)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', timeout('The write operation timed out'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 955, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1043, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1118, in __threaded_polling
+    raise e
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 148, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "c:\Users\paulo.welton\Desktop\bot_telegram_yt\src\model\bot.py", line 67, in callback_query
+    bot.send_video(message.chat.id, video)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 2257, in send_video
+    apihelper.send_video(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 719, in send_video
+    return _make_request(token, method_url, params=payload, files=files, method='post')
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 156, in _make_request
+    result = _get_req_session().request(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', timeout('The write operation timed out'))
+
+ 13/02/2025 09:01:32 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 13/02/2025 09:01:32 AM - INFO - bot chamado
+ 13/02/2025 09:01:49 AM - INFO - usuario esta tentando fazer download
+ 13/02/2025 09:02:35 AM - INFO - baixando audio...
+ 13/02/2025 09:02:38 AM - ERROR - erro ao baixar video: 'charmap' codec can't encode character '\u21b3' in position 1: character maps to <undefined>
