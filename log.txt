@@ -376,3 +376,74 @@ requests.exceptions.ConnectionError: ('Connection aborted.', timeout('The write 
  13/02/2025 09:01:49 AM - INFO - usuario esta tentando fazer download
  13/02/2025 09:02:35 AM - INFO - baixando audio...
  13/02/2025 09:02:38 AM - ERROR - erro ao baixar video: 'charmap' codec can't encode character '\u21b3' in position 1: character maps to <undefined>
+ 17/03/2025 08:42:41 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 17/03/2025 08:42:41 AM - INFO - bot chamado
+ 17/03/2025 08:42:42 AM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 403. Description: Forbidden: bot was blocked by the user
+ 17/03/2025 08:42:42 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 148, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "c:\Users\paulo.welton\Desktop\bot_telegram_youtube\src\model\bot.py", line 27, in send_instructions
+    bot.reply_to(message, "Hello i'm welton bot\n\nSend me a youtube link and recive a archive MP4")
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 4368, in reply_to
+    return self.send_message(message.chat.id, text, reply_to_message_id=message.message_id, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1549, in send_message
+    apihelper.send_message(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 264, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 403. Description: Forbidden: bot was blocked by the user
+
+ 17/03/2025 08:49:37 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 17/03/2025 08:49:37 AM - INFO - bot chamado
+ 17/03/2025 08:50:27 AM - INFO - usuario esta tentando fazer download
+ 17/03/2025 08:50:59 AM - INFO - baixando audio...
+ 17/03/2025 08:51:04 AM - ERROR - erro ao baixar video: 'charmap' codec can't encode character '\u21b3' in position 1: character maps to <undefined>
+ 17/03/2025 09:12:03 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 17/03/2025 09:12:04 AM - ERROR - Error: 'TeleBot' object is not callable
+ 17/03/2025 09:12:04 AM - INFO - tarefa finalizada
+
+ 17/03/2025 09:12:47 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 17/03/2025 09:12:47 AM - ERROR - Error: 'TeleBot' object is not callable
+ 17/03/2025 09:12:47 AM - INFO - tarefa finalizada
+
+ 17/03/2025 09:13:46 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 17/03/2025 09:13:46 AM - ERROR - Error: 'TeleBot' object is not callable
+ 17/03/2025 09:13:46 AM - INFO - tarefa finalizada
+
+ 17/03/2025 09:15:04 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 17/03/2025 09:15:04 AM - ERROR - Error: bot() missing 1 required positional argument: 'bot'
+ 17/03/2025 09:15:04 AM - INFO - tarefa finalizada
+
+ 17/03/2025 09:16:08 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 17/03/2025 09:16:08 AM - ERROR - Error: bot() missing 1 required positional argument: 'bot'
+ 17/03/2025 09:16:08 AM - INFO - tarefa finalizada
+
+ 17/03/2025 09:16:37 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 17/03/2025 09:16:37 AM - INFO - bot chamado
+ 17/03/2025 09:16:37 AM - ERROR - Error: __init__() missing 1 required positional argument: 'token'
+ 17/03/2025 09:16:37 AM - INFO - tarefa finalizada
+
+ 17/03/2025 09:17:31 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 17/03/2025 09:17:31 AM - INFO - bot chamado
+ 17/03/2025 09:17:33 AM - INFO - usuario esta tentando fazer download
+ 17/03/2025 09:18:08 AM - INFO - baixando audio...
+ 17/03/2025 09:18:12 AM - ERROR - erro ao baixar video: 'charmap' codec can't encode character '\u21b3' in position 1: character maps to <undefined>
