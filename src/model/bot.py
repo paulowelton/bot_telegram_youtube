@@ -43,7 +43,7 @@ def bot():
             titulo = get_title(youtube_link)
             thumb = get_thumb(youtube_link)
             
-            message = bot.send_photo(message.chat.id, thumb, f'<b>{titulo}</b>\n\n<b>Choose one option</b>', reply_markup=markup, parse_mode='HTML')
+            message = bot.send_photo(message.chat.id, thumb, f'<b>{titulo}</b>\n\n<b>Escolha uma opção</b>', reply_markup=markup, parse_mode='HTML')
             
             @bot.callback_query_handler(func=lambda call: True)
             def callback_query(call):
@@ -51,14 +51,14 @@ def bot():
                     bot.send_message(message.chat.id, 'Aguardando download...')
                     
                     login = os.getlogin()
-                    caminho_video = f'C:\\Users\\{login}\\Desktop\\bot_telegram_yt\\video\\{titulo}.mp4'
+                    caminho_video = f'C:\\Users\\{login}\\Desktop\\bot_telegram_youtube\\video\\{titulo}.mp4'
                     
                     download_video(youtube_link, titulo)
                     
                     if os.path.getsize(caminho_video) > 50 * 1024 * 1024:
                         bot.send_message(message.chat.id, 'Erro, este video tem um limite de 50mb')
                         
-                        bot.delete_message(message.chat.id, message.message_id)
+                        # bot.delete_message(message.chat.id, message.message_id)
                     
                         apagar_arquivos(caminho_video)
                     else:
@@ -66,7 +66,7 @@ def bot():
                             with open(caminho_video, 'rb') as video:
                                 bot.send_video(message.chat.id, video)
                                 
-                            bot.delete_message(message.chat.id, message.message_id)
+                            # bot.delete_message(message.chat.id, message.message_id)
                         
                             apagar_arquivos(caminho_video)
                         except:
@@ -76,14 +76,14 @@ def bot():
                     bot.send_message(message.chat.id, 'Aguardando Download...')
                     
                     login = os.getlogin()
-                    path_audio = f'C:\\Users\\{login}\\Desktop\\bot_telegram_yt\\audio\\{titulo}.m4a'
+                    path_audio = f'C:\\Users\\{login}\\Desktop\\bot_telegram_youtube\\audio\\{titulo}.m4a'
                     
                     download_audio(youtube_link)
                     
                     with open(path_audio, "rb") as audio:
                         bot.send_audio(message.chat.id, audio, caption=f"<b>{titulo}</b>\n\n<b>Criador: </b><a href='https://github.com/paulowelton'>GitHub</a>", parse_mode='HTML')
                     
-                    bot.delete_message(message.chat.id, message.message_id)
+                    # bot.delete_message(message.chat.id, message.message_id)
                     
                     apagar_arquivos(path_audio)
                                 
@@ -97,7 +97,7 @@ def bot():
             log.error(e)
             bot.send_message(message.chat.id, "O Download falhou, tente novamente...")
             
-    bot.infinity_polling()
+    bot.infinity_polling(timeout=120, long_polling_timeout=120)
 
 if __name__ == '__main__':
     bot()

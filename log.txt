@@ -447,3 +447,446 @@ telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsucc
  17/03/2025 09:17:33 AM - INFO - usuario esta tentando fazer download
  17/03/2025 09:18:08 AM - INFO - baixando audio...
  17/03/2025 09:18:12 AM - ERROR - erro ao baixar video: 'charmap' codec can't encode character '\u21b3' in position 1: character maps to <undefined>
+ 17/03/2025 12:24:06 PM - INFO - BOT TELEGRAM YOUTUBE
+
+ 17/03/2025 12:24:06 PM - INFO - bot chamado
+ 17/03/2025 12:25:21 PM - INFO - usuario esta tentando fazer download
+ 17/03/2025 12:25:30 PM - INFO - baixando audio...
+ 17/03/2025 12:25:33 PM - ERROR - erro ao baixar video: 'charmap' codec can't encode character '\u21b3' in position 1: character maps to <undefined>
+ 17/03/2025 12:47:03 PM - INFO - usuario esta tentando fazer download
+ 17/03/2025 12:47:10 PM - INFO - baixando audio...
+ 17/03/2025 12:47:13 PM - ERROR - erro ao baixar video: 'charmap' codec can't encode character '\u21b3' in position 1: character maps to <undefined>
+ 17/03/2025 12:47:21 PM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+ 17/03/2025 12:47:21 PM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 148, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "c:\Users\paulo.welton\Desktop\bot_telegram_youtube\src\model\bot.py", line 86, in callback_query
+    bot.delete_message(message.chat.id, message.message_id)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1696, in delete_message
+    return apihelper.delete_message(self.token, chat_id, message_id, timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 1325, in delete_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+
+ 17/03/2025 12:50:16 PM - INFO - baixando audio...
+ 17/03/2025 12:50:23 PM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+ 17/03/2025 12:50:23 PM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 148, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "c:\Users\paulo.welton\Desktop\bot_telegram_youtube\src\model\bot.py", line 86, in callback_query
+    bot.delete_message(message.chat.id, message.message_id)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1696, in delete_message
+    return apihelper.delete_message(self.token, chat_id, message_id, timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 1325, in delete_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+
+ 17/03/2025 12:50:37 PM - INFO - baixando audio...
+ 17/03/2025 12:50:45 PM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+ 17/03/2025 12:50:46 PM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 148, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "c:\Users\paulo.welton\Desktop\bot_telegram_youtube\src\model\bot.py", line 86, in callback_query
+    bot.delete_message(message.chat.id, message.message_id)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1696, in delete_message
+    return apihelper.delete_message(self.token, chat_id, message_id, timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 1325, in delete_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+
+ 17/03/2025 12:51:41 PM - INFO - usuario cancelou o download
+ 17/03/2025 12:51:41 PM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+ 17/03/2025 12:51:41 PM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 148, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "c:\Users\paulo.welton\Desktop\bot_telegram_youtube\src\model\bot.py", line 93, in callback_query
+    bot.delete_message(message.chat.id, message.message_id)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1696, in delete_message
+    return apihelper.delete_message(self.token, chat_id, message_id, timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 1325, in delete_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+
+ 17/03/2025 12:52:00 PM - INFO - usuario esta tentando fazer download
+ 17/03/2025 12:52:04 PM - INFO - baixando audio...
+ 17/03/2025 12:52:11 PM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+ 17/03/2025 12:52:11 PM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 148, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "c:\Users\paulo.welton\Desktop\bot_telegram_youtube\src\model\bot.py", line 86, in callback_query
+    bot.delete_message(message.chat.id, message.message_id)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1696, in delete_message
+    return apihelper.delete_message(self.token, chat_id, message_id, timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 1325, in delete_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+
+ 17/03/2025 12:55:32 PM - INFO - usuario esta tentando fazer download
+ 17/03/2025 12:55:37 PM - INFO - baixando audio...
+ 17/03/2025 12:55:44 PM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+ 17/03/2025 12:55:44 PM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 148, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "c:\Users\paulo.welton\Desktop\bot_telegram_youtube\src\model\bot.py", line 86, in callback_query
+    bot.delete_message(message.chat.id, message.message_id)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1696, in delete_message
+    return apihelper.delete_message(self.token, chat_id, message_id, timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 1325, in delete_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+
+ 17/03/2025 12:56:10 PM - INFO - BOT TELEGRAM YOUTUBE
+
+ 17/03/2025 12:56:10 PM - INFO - bot chamado
+ 17/03/2025 12:56:34 PM - INFO - usuario esta tentando fazer download
+ 17/03/2025 12:56:40 PM - INFO - baixando audio...
+ 17/03/2025 12:56:48 PM - ERROR - erro ao baixar video: 'charmap' codec can't encode character '\u21b3' in position 1: character maps to <undefined>
+ 17/03/2025 12:57:03 PM - ERROR - Infinity polling exception: ('Connection aborted.', timeout('The write operation timed out'))
+ 17/03/2025 12:57:03 PM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 495, in _make_request
+    conn.request(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 455, in request
+    self.send(chunk)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1001, in send
+    self.sock.sendall(data)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1204, in sendall
+    v = self.send(byte_view[count:])
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1173, in send
+    return self._sslobj.write(data)
+socket.timeout: The write operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 495, in _make_request
+    conn.request(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 455, in request
+    self.send(chunk)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1001, in send
+    self.sock.sendall(data)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1204, in sendall
+    v = self.send(byte_view[count:])
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1173, in send
+    return self._sslobj.write(data)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', timeout('The write operation timed out'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 955, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1043, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1118, in __threaded_polling
+    raise e
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 148, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "c:\Users\paulo.welton\Desktop\bot_telegram_youtube\src\model\bot.py", line 84, in callback_query
+    bot.send_audio(message.chat.id, audio, caption=f"<b>{titulo}</b>\n\n<b>Criador: </b><a href='https://github.com/paulowelton'>GitHub</a>", parse_mode='HTML')
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1917, in send_audio
+    apihelper.send_audio(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 893, in send_audio
+    return _make_request(token, method_url, params=payload, files=files, method='post')
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 156, in _make_request
+    result = _get_req_session().request(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', timeout('The write operation timed out'))
+
+ 20/03/2025 11:07:09 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 20/03/2025 11:07:09 AM - INFO - bot chamado
+ 20/03/2025 11:07:27 AM - INFO - usuario esta tentando fazer download
+ 20/03/2025 11:07:32 AM - INFO - baixando audio...
+ 20/03/2025 11:07:33 AM - ERROR - erro ao baixar video: 'NoneType' object has no attribute 'download'
+ 20/03/2025 11:07:48 AM - ERROR - Infinity polling exception: ('Connection aborted.', timeout('The write operation timed out'))
+ 20/03/2025 11:07:48 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 495, in _make_request
+    conn.request(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 455, in request
+    self.send(chunk)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1001, in send
+    self.sock.sendall(data)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1204, in sendall
+    v = self.send(byte_view[count:])
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1173, in send
+    return self._sslobj.write(data)
+socket.timeout: The write operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 495, in _make_request
+    conn.request(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 455, in request
+    self.send(chunk)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1001, in send
+    self.sock.sendall(data)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1204, in sendall
+    v = self.send(byte_view[count:])
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1173, in send
+    return self._sslobj.write(data)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', timeout('The write operation timed out'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 955, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1043, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1118, in __threaded_polling
+    raise e
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 148, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "c:\Users\paulo.welton\Desktop\bot_telegram_youtube\src\model\bot.py", line 84, in callback_query
+    bot.send_audio(message.chat.id, audio, caption=f"<b>{titulo}</b>\n\n<b>Criador: </b><a href='https://github.com/paulowelton'>GitHub</a>", parse_mode='HTML')
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1917, in send_audio
+    apihelper.send_audio(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 893, in send_audio
+    return _make_request(token, method_url, params=payload, files=files, method='post')
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 156, in _make_request
+    result = _get_req_session().request(
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', timeout('The write operation timed out'))
+
+ 20/03/2025 11:09:56 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 20/03/2025 11:09:56 AM - INFO - bot chamado
+ 20/03/2025 11:10:03 AM - INFO - usuario esta tentando fazer download
+ 20/03/2025 11:10:10 AM - INFO - baixando audio...
+ 20/03/2025 11:10:19 AM - ERROR - erro ao baixar video: 'charmap' codec can't encode character '\u21b3' in position 1: character maps to <undefined>
+ 20/03/2025 12:24:53 PM - INFO - BOT TELEGRAM YOUTUBE
+
+ 20/03/2025 12:24:53 PM - INFO - bot chamado
+ 20/03/2025 12:26:13 PM - INFO - usuario esta tentando fazer download
+ 20/03/2025 12:26:22 PM - INFO - baixando audio...
+ 20/03/2025 12:26:25 PM - ERROR - erro ao baixar video: 'charmap' codec can't encode character '\u21b3' in position 1: character maps to <undefined>
+ 20/03/2025 12:29:42 PM - INFO - BOT TELEGRAM YOUTUBE
+
+ 20/03/2025 12:29:42 PM - INFO - bot chamado
+ 20/03/2025 12:29:43 PM - INFO - usuario esta tentando fazer download
+ 20/03/2025 12:29:52 PM - INFO - baixando audio...
+ 20/03/2025 12:29:56 PM - ERROR - erro ao baixar video: 'charmap' codec can't encode character '\u21b3' in position 1: character maps to <undefined>
+ 20/03/2025 12:34:56 PM - INFO - usuario esta tentando fazer download
+ 20/03/2025 12:35:03 PM - INFO - baixando audio...
+ 20/03/2025 12:35:07 PM - ERROR - erro ao baixar video: 'charmap' codec can't encode character '\u21b3' in position 1: character maps to <undefined>
+ 20/03/2025 12:35:18 PM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+ 20/03/2025 12:35:18 PM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 148, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "c:\Users\paulo.welton\Desktop\bot_telegram_youtube\src\model\bot.py", line 86, in callback_query
+    bot.delete_message(message.chat.id, message.message_id)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1696, in delete_message
+    return apihelper.delete_message(self.token, chat_id, message_id, timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 1325, in delete_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+
+ 20/03/2025 12:38:39 PM - INFO - BOT TELEGRAM YOUTUBE
+
+ 20/03/2025 12:38:39 PM - INFO - bot chamado
+ 20/03/2025 12:38:49 PM - INFO - usuario esta tentando fazer download
+ 20/03/2025 12:38:58 PM - INFO - baixando audio...
+ 20/03/2025 12:39:01 PM - ERROR - erro ao baixar video: 'charmap' codec can't encode character '\u21b3' in position 1: character maps to <undefined>
+ 20/03/2025 12:39:01 PM - ERROR - Infinity polling exception: [Errno 2] No such file or directory: 'C:\\Users\\paulo.welton\\Desktop\\bot_telegram_youtube\\audio\\Jovemdex, Brandão85, Leviano - PAPARAZZI! \U0001f4f8 (Áudio/Visualizer Oficial).m4a'
+ 20/03/2025 12:39:01 PM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 955, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1043, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1118, in __threaded_polling
+    raise e
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 148, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "c:\Users\paulo.welton\Desktop\bot_telegram_youtube\src\model\bot.py", line 83, in callback_query
+    with open(path_audio, "rb") as audio:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\paulo.welton\\Desktop\\bot_telegram_youtube\\audio\\Jovemdex, Brandão85, Leviano - PAPARAZZI! \U0001f4f8 (Áudio/Visualizer Oficial).m4a'
+
+ 20/03/2025 12:40:40 PM - INFO - BOT TELEGRAM YOUTUBE
+
+ 20/03/2025 12:40:40 PM - INFO - bot chamado
+ 20/03/2025 12:40:44 PM - INFO - usuario esta tentando fazer download
+ 20/03/2025 12:40:48 PM - INFO - baixando audio...
+ 20/03/2025 12:40:51 PM - ERROR - erro ao baixar video: 'charmap' codec can't encode character '\u21b3' in position 1: character maps to <undefined>
+ 20/03/2025 12:40:51 PM - ERROR - Infinity polling exception: [Errno 2] No such file or directory: 'C:\\Users\\paulo.welton\\Desktop\\bot_telegram_youtube\\audio\\Jovemdex, Brandão85, Leviano - PAPARAZZI! \U0001f4f8 (Áudio/Visualizer Oficial).m4a'
+ 20/03/2025 12:40:51 PM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 955, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1043, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1118, in __threaded_polling
+    raise e
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 148, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "c:\Users\paulo.welton\Desktop\bot_telegram_youtube\src\model\bot.py", line 83, in callback_query
+    with open(path_audio, "rb") as audio:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\paulo.welton\\Desktop\\bot_telegram_youtube\\audio\\Jovemdex, Brandão85, Leviano - PAPARAZZI! \U0001f4f8 (Áudio/Visualizer Oficial).m4a'
+
+ 20/03/2025 12:42:56 PM - INFO - usuario esta tentando fazer download
+ 20/03/2025 12:43:03 PM - INFO - baixando audio...
+ 20/03/2025 12:43:04 PM - ERROR - Infinity polling exception: [Errno 2] No such file or directory: 'C:\\Users\\paulo.welton\\Desktop\\bot_telegram_youtube\\audio\\Jovemdex, Brandão85, Leviano - PAPARAZZI! \U0001f4f8 (Áudio/Visualizer Oficial).m4a'
+ 20/03/2025 12:43:04 PM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 955, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1043, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1118, in __threaded_polling
+    raise e
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 148, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "c:\Users\paulo.welton\Desktop\bot_telegram_youtube\src\model\bot.py", line 83, in callback_query
+    with open(path_audio, "rb") as audio:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\paulo.welton\\Desktop\\bot_telegram_youtube\\audio\\Jovemdex, Brandão85, Leviano - PAPARAZZI! \U0001f4f8 (Áudio/Visualizer Oficial).m4a'
+
+ 20/03/2025 12:44:06 PM - INFO - BOT TELEGRAM YOUTUBE
+
+ 20/03/2025 12:44:06 PM - INFO - bot chamado
+ 20/03/2025 12:44:17 PM - INFO - usuario esta tentando fazer download
+ 20/03/2025 12:44:50 PM - INFO - baixando audio...
+ 20/03/2025 12:44:54 PM - ERROR - erro ao baixar video: 'charmap' codec can't encode character '\u21b3' in position 1: character maps to <undefined>

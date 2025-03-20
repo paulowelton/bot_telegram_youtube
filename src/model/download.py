@@ -38,7 +38,7 @@ def download_audio(link):
         yt = YouTube(link, on_progress_callback=on_progress)
         
         login = os.getlogin()
-        path_audio = f'C:\\Users\\{login}\\Desktop\\bot_telegram_yt\\audio\\'
+        path_audio = f'C:\\Users\\{login}\\Desktop\\bot_telegram_youtube\\audio\\'
         
         ys = yt.streams.get_audio_only()
         ys.download(output_path=path_audio)
