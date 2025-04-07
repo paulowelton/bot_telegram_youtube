@@ -13,8 +13,15 @@ BOT_TOKEN = '8008948209:AAGcIJmEhB81t-oKNJsljyG_4brDM5y8Ifk'
 
 YOUTUBE_REGEX = r"(https?://)?(www\.)?(youtube\.com|youtu\.be)/\S+"
 
+def sanitize_filename(filename):
+    return re.sub(r'[^a-zA-Z0-9_-]', '_', filename)
+
 def bot():
+    links = []
     
+    filenames = []
+    
+    print('bot chamado')
     log.info('bot chamado')
     
     bot = telebot.TeleBot(BOT_TOKEN)
@@ -29,8 +36,11 @@ def bot():
     def handle_youtube_link(message):
         try:
             log.info('usuario esta tentando fazer download')
+            print('usuario esta tentando fazer um download')
             
             youtube_link = message.text.strip()
+            
+            links.append(youtube_link)
             
             markup = InlineKeyboardMarkup()
             option_video = InlineKeyboardButton("Video", callback_data="option_video")
@@ -40,8 +50,14 @@ def bot():
             markup.add(option_audio)
             markup.add(option_cancel)
             
-            titulo = get_title(youtube_link)
+            titulo_antigo = get_title(youtube_link)
+            titulo = sanitize_filename(titulo_antigo)   
+            
             thumb = get_thumb(youtube_link)
+            
+            print(f'{titulo}: {youtube_link}')
+            
+            filenames.append(titulo + '.m4a')
             
             message = bot.send_photo(message.chat.id, thumb, f'<b>{titulo}</b>\n\n<b>Escolha uma opção</b>', reply_markup=markup, parse_mode='HTML')
             
@@ -58,7 +74,7 @@ def bot():
                     if os.path.getsize(caminho_video) > 50 * 1024 * 1024:
                         bot.send_message(message.chat.id, 'Erro, este video tem um limite de 50mb')
                         
-                        # bot.delete_message(message.chat.id, message.message_id)
+                        #bot.delete_message(message.chat.id, message.message_id)
                     
                         apagar_arquivos(caminho_video)
                     else:
@@ -66,26 +82,37 @@ def bot():
                             with open(caminho_video, 'rb') as video:
                                 bot.send_video(message.chat.id, video)
                                 
-                            # bot.delete_message(message.chat.id, message.message_id)
+                            bot.delete_message(message.chat.id, message.message_id)
                         
                             apagar_arquivos(caminho_video)
                         except:
                             bot.send_message(message.chat.id, 'Erro, tente Novamente')
 
+
+
+
+
+
+
+
                 if call.data == "option_audio":
+                    print('usuario pediu a opcao audio')
                     bot.send_message(message.chat.id, 'Aguardando Download...')
                     
-                    login = os.getlogin()
-                    path_audio = f'C:\\Users\\{login}\\Desktop\\bot_telegram_youtube\\audio\\{titulo}.m4a'
+                    caminho = download_audio(links[-1], filenames[-1])
                     
-                    download_audio(youtube_link)
-                    
-                    with open(path_audio, "rb") as audio:
+                    with open(caminho, "rb") as audio:
                         bot.send_audio(message.chat.id, audio, caption=f"<b>{titulo}</b>\n\n<b>Criador: </b><a href='https://github.com/paulowelton'>GitHub</a>", parse_mode='HTML')
                     
-                    # bot.delete_message(message.chat.id, message.message_id)
+                    bot.delete_message(message.chat.id, message.message_id)
                     
-                    apagar_arquivos(path_audio)
+                    print('audio enviado\n')
+                    
+                    apagar_arquivos(caminho)
+                                
+                                
+                                
+                                
                                 
                 if call.data == "option_cancel":
                     log.info('usuario cancelou o download')

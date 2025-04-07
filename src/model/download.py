@@ -29,19 +29,24 @@ def download_video(link, titulo):
     print('download concluido')
 
 
-def download_audio(link):
+def download_audio(link, filename):
     
     try:
+        print(f'link recebido pra download: {link}')
         
         log.info('baixando audio...')
         
-        yt = YouTube(link, on_progress_callback=on_progress)
+        yt = YouTube(link)
         
         login = os.getlogin()
         path_audio = f'C:\\Users\\{login}\\Desktop\\bot_telegram_youtube\\audio\\'
         
         ys = yt.streams.get_audio_only()
-        ys.download(output_path=path_audio)
+        cam = ys.download(output_path=path_audio, filename=filename)
+        
+        print(f'caminho: {cam}')
+        
+        return cam
         
     
     except Exception as e:
