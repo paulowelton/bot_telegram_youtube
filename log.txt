@@ -1313,3 +1313,98 @@ Traceback (most recent call last):
     raise ApiTelegramException(method_name, result, result_json)
 telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
 
+ 08/04/2025 08:42:46 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 08/04/2025 08:42:46 AM - INFO - bot chamado
+ 08/04/2025 08:44:22 AM - INFO - usuario esta tentando fazer download
+ 08/04/2025 08:44:28 AM - INFO - baixando audio...
+ 08/04/2025 08:44:41 AM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message identifier is not specified
+ 08/04/2025 08:44:41 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 148, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "c:\Users\paulo.welton\Desktop\bot_telegram_youtube\src\model\bot.py", line 112, in callback_query
+    bot.delete_message(message.chat.id, message_id)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1696, in delete_message
+    return apihelper.delete_message(self.token, chat_id, message_id, timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 1325, in delete_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message identifier is not specified
+
+ 08/04/2025 08:47:01 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 08/04/2025 08:47:01 AM - INFO - bot chamado
+ 08/04/2025 08:47:02 AM - INFO - usuario esta tentando fazer download
+ 08/04/2025 08:47:04 AM - INFO - usuario esta tentando fazer download
+ 08/04/2025 08:47:17 AM - INFO - baixando audio...
+ 08/04/2025 08:47:32 AM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message identifier is not specified
+ 08/04/2025 08:47:32 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 148, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "c:\Users\paulo.welton\Desktop\bot_telegram_youtube\src\model\bot.py", line 113, in callback_query
+    bot.delete_message(message.chat.id, message_ids[-1])
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1696, in delete_message
+    return apihelper.delete_message(self.token, chat_id, message_id, timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 1325, in delete_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message identifier is not specified
+
+ 08/04/2025 08:48:41 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 08/04/2025 08:48:41 AM - INFO - bot chamado
+ 08/04/2025 08:49:28 AM - INFO - usuario esta tentando fazer download
+ 08/04/2025 08:49:43 AM - INFO - baixando audio...
+ 08/04/2025 08:49:56 AM - ERROR - Infinity polling exception: 'Message' object has no attribute 'message_ids'
+ 08/04/2025 08:49:56 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 955, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1043, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1118, in __threaded_polling
+    raise e
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 148, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "c:\Users\paulo.welton\Desktop\bot_telegram_youtube\src\model\bot.py", line 113, in callback_query
+    bot.delete_message(message.chat.id, message.message_ids[-1])
+AttributeError: 'Message' object has no attribute 'message_ids'
+
+ 08/04/2025 09:20:00 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 08/04/2025 09:20:00 AM - INFO - bot chamado
+ 08/04/2025 09:20:22 AM - INFO - usuario esta tentando fazer download
+ 08/04/2025 09:20:30 AM - INFO - baixando audio...
+ 08/04/2025 09:49:15 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 08/04/2025 09:49:15 AM - INFO - bot chamado
+ 08/04/2025 09:49:51 AM - INFO - usuario esta tentando fazer download
+ 08/04/2025 09:49:59 AM - INFO - baixando audio...
+ 08/04/2025 09:50:45 AM - INFO - usuario esta tentando fazer download
+ 08/04/2025 09:50:51 AM - INFO - baixando audio...
