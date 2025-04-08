@@ -9,7 +9,7 @@ from src.model.download import get_title
 from src.model.download import get_thumb
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-BOT_TOKEN = '8008948209:AAGcIJmEhB81t-oKNJsljyG_4brDM5y8Ifk'
+BOT_TOKEN = ''
 
 YOUTUBE_REGEX = r"(https?://)?(www\.)?(youtube\.com|youtu\.be)/\S+"
 

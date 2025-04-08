@@ -1408,3 +1408,323 @@ AttributeError: 'Message' object has no attribute 'message_ids'
  08/04/2025 09:49:59 AM - INFO - baixando audio...
  08/04/2025 09:50:45 AM - INFO - usuario esta tentando fazer download
  08/04/2025 09:50:51 AM - INFO - baixando audio...
+ 08/04/2025 09:54:06 AM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by setWebhook request
+ 08/04/2025 09:54:06 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1073, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 109, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 649, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 623, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 321, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by setWebhook request
+
+ 08/04/2025 09:54:10 AM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+ 08/04/2025 09:54:10 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1073, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 109, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 649, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 623, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 321, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+
+ 08/04/2025 09:54:10 AM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+ 08/04/2025 09:54:10 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1073, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 109, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 649, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 623, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 321, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+
+ 08/04/2025 09:54:15 AM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+ 08/04/2025 09:54:15 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1073, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 109, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 649, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 623, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 321, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+
+ 08/04/2025 09:54:17 AM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+ 08/04/2025 09:54:17 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1073, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 109, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 649, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 623, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 321, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+
+ 08/04/2025 09:54:21 AM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+ 08/04/2025 09:54:21 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1073, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 109, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 649, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 623, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 321, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+
+ 08/04/2025 09:54:29 AM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+ 08/04/2025 09:54:29 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1073, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 109, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 649, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 623, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 321, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+
+ 08/04/2025 09:54:45 AM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+ 08/04/2025 09:54:45 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1073, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 109, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 649, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 623, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 321, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+
+ 08/04/2025 09:55:17 AM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+ 08/04/2025 09:55:17 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1073, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 109, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 649, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 623, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 321, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+
+ 08/04/2025 09:56:17 AM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+ 08/04/2025 09:56:17 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1073, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 109, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 649, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 623, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 321, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+
+ 08/04/2025 09:57:18 AM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+ 08/04/2025 09:57:18 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1073, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 109, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 649, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 623, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 321, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+
+ 08/04/2025 09:58:18 AM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+ 08/04/2025 09:58:18 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1073, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 109, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 649, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 623, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 321, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+
+ 08/04/2025 09:59:18 AM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+ 08/04/2025 09:59:18 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1073, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 109, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 649, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 623, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 321, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+
+ 08/04/2025 10:00:18 AM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+ 08/04/2025 10:00:18 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1073, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 109, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 649, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 623, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 321, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+
+ 08/04/2025 10:01:19 AM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+ 08/04/2025 10:01:19 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1073, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 109, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 649, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 623, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 321, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+
+ 08/04/2025 10:01:44 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 08/04/2025 10:01:44 AM - INFO - bot chamado
+ 08/04/2025 10:01:50 AM - INFO - usuario esta tentando fazer download
+ 08/04/2025 10:01:56 AM - INFO - baixando audio...
