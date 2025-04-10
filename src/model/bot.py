@@ -1,5 +1,5 @@
 import logging as log
-import os
+import time
 import telebot
 import re
 from src.model.download import download_audio
@@ -7,9 +7,10 @@ from src.model.download import download_video
 from src.model.apagar_arquivos import apagar_arquivos
 from src.model.download import get_title
 from src.model.download import get_thumb
+from src.model.upload_file import upload_file
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-BOT_TOKEN = ''
+BOT_TOKEN = '8008948209:AAGcIJmEhB81t-oKNJsljyG_4brDM5y8Ifk'
 
 YOUTUBE_REGEX = r"(https?://)?(www\.)?(youtube\.com|youtu\.be)/\S+"
 
@@ -21,7 +22,9 @@ def bot():
     log.info('bot chamado')
     
     bot = telebot.TeleBot(BOT_TOKEN)
+    
     bot.remove_webhook()
+    time.sleep(1)
     
     user_data = {}
     
@@ -46,20 +49,35 @@ def bot():
             
             if call.data == "option_audio":
                 print('usuario pediu a opcao audio')
+                log.info('usuario pediu a opcao audio')
                 bot.send_message(chat_id, 'Aguardando Download...')
                 
                 caminho = download_audio(link, filename)
                 
                 with open(caminho, "rb") as audio:
-                    bot.send_audio(chat_id, audio, caption=f"<b>{titulo}</b>\n\n<b>Criador: </b><a href='https://github.com/paulowelton'>GitHub</a>", parse_mode='HTML')
+                    bot.send_audio(chat_id, audio, caption=f"<b>{titulo}</b>\n\n<b>Criador: </b><a href='https://github.com/paulowelton'>GitHub</a>", parse_mode='HTML', timeout=120)
                 apagar_arquivos(caminho)
                 
                 print('audio enviado\n')
+                log.info('audio enviado\n')
                                                                                                                                          
             if call.data == "option_video":
-                pass
-            
+                print('o usuario pediu a opcao video')
+                log.info('o usuario pediu a opcao video')                
+                
+                caminho = download_video(link, filename)
+                
+                link_video = upload_file(caminho)
+                
+                if link_video:
+                    bot.send_message(chat_id, f'Link para upload do video: {link_video}')
+                else:
+                    bot.send_message(chat_id, 'Erro ao baixar, tenta novamente')
+                    
+                apagar_arquivos(caminho)
+                
             if call.data == "option_cancel":
+                print('usuario cancelou o download')
                 log.info('usuario cancelou o download')
                 
                 bot.delete_message(chat_id, message_id)
@@ -99,6 +117,7 @@ def bot():
             }
             
             print(f'{titulo}: {youtube_link}')
+            log.info(f'{titulo}: {youtube_link}')
             
             markup = InlineKeyboardMarkup()
             markup.add(

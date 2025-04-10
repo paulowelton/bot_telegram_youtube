@@ -18,23 +18,26 @@ def get_title(link):
     
     return titulo
 
-def download_video(link, titulo):
+def download_video(link, filename):
     yt = YouTube(link)
     
     login = os.getlogin()
-    path_audio = f'C:\\Users\\{login}\\Desktop\\bot_telegram_yt\\video\\'
-    stream = yt.streams.get_lowest_resolution()
-    stream.download(output_path=f'{path_audio}', filename=f'{titulo}.mp4')
+    path_video = f'C:\\Users\\{login}\\Desktop\\bot_telegram_youtube\\video\\'
     
-    print('download concluido')
+    stream = yt.streams.filter(progressive=True, file_extension="mp4", res="360p").first()
+    cam = stream.download(output_path=f'{path_video}', filename=filename)
+    
+    print(f'caminho: {cam}')
+    log.info(f'caminho: {cam}')
+    
+    return cam
 
 
 def download_audio(link, filename):
     
     try:
-        print(f'link recebido pra download: {link}')
-        
         log.info('baixando audio...')
+        print('baixando audio...')
         
         yt = YouTube(link)
         
@@ -45,6 +48,7 @@ def download_audio(link, filename):
         cam = ys.download(output_path=path_audio, filename=filename)
         
         print(f'caminho: {cam}')
+        log.info(f'caminho: {cam}')
         
         return cam
         
@@ -55,4 +59,4 @@ def download_audio(link, filename):
         
         return False    
 if __name__ == '__main__':
-    download_video('https://www.youtube.com/watch?v=3-qwqrQXsXQ&list=RD3-qwqrQXsXQ&start_radio=1', 'teste')
+    download_video('', 'teste')
