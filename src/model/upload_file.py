@@ -1,38 +1,23 @@
 import requests
 
-def upload_transfer_sh(file_path):
-    try:
-        with open(file_path, 'rb') as f:
-            file_name = file_path.split('/')[-1]
-            response = requests.put(f'https://transfer.sh/{file_name}', data=f)
-        
-        if response.status_code == 200:
-            print("Upload feito com sucesso!")
-            print("Link:", response.text.strip())
-            return response.text.strip()
-        else:
-            print("Erro ao enviar:", response.status_code, response.text)
-            return None
-    except Exception as e:
-        print("Erro:", e)
-        return None
-
-def upload_to_anonfiles(file_path):
-    url = 'https://api.anonfiles.com/upload'
+def upload_to_pixeldrain(file_path):
     with open(file_path, 'rb') as f:
-        files = {'file': (file_path, f)}
-        response = requests.post(url, files=files)
+        files = {'file': f}
+        # Autenticação básica: username vazio, API key como senha
+        response = requests.post(
+            'https://pixeldrain.com/api/file',
+            files=files,
+            auth=('', '11cc5500-5a7e-44b2-a225-b4d5e941a029')
+        )
 
-    try:
-        result = response.json()
-        if result['status']:
-            file_url = result['data']['file']['url']['full']
-            print(f"Arquivo enviado com sucesso: {file_url}")
-            return file_url
+        if response.status_code in [200,201]:
+            file_id = response.json()['id']
+            return f'https://pixeldrain.com/u/{file_id}'
         else:
-            print("Erro no upload:", result)
-    except Exception as e:
-        print("Erro ao tentar decodificar JSON:", e)
+            print("Erro:", response.text)
+            return None
 
-# Exemplo de uso
-upload_to_anonfiles('C:\\Users\\paulo.welton\\Desktop\\bot_telegram_youtube\\video\\FIZ_UM_MALWARE.m4a')
+if __name__ == '__main__':
+    api_key = '11cc5500-5a7e-44b2-a225-b4d5e941a029'
+    link = upload_to_pixeldrain("C:\\Users\\paulo.welton\\Desktop\\bot_telegram_youtube\\video\\teste.XLS", api_key)
+    print("Link do arquivo:", link)

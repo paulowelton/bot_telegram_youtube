@@ -7,7 +7,8 @@ from src.model.download import download_video
 from src.model.apagar_arquivos import apagar_arquivos
 from src.model.download import get_title
 from src.model.download import get_thumb
-from src.model.upload_file import upload_file
+from src.model.enviar_email import enviar_email
+from src.model.upload_file import upload_to_pixeldrain
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 BOT_TOKEN = '8008948209:AAGcIJmEhB81t-oKNJsljyG_4brDM5y8Ifk'
@@ -31,6 +32,57 @@ def bot():
     @bot.message_handler(commands=['start', 'hello'])
     def send_instructions(message):
         bot.reply_to(message, "Olá eu sou um Bot de Download\n\nMe envie um link do Youtube")
+    
+    def processar_escolha(message, dados):
+        escolha = message.text.strip()
+        chat_id = message.chat.id
+        
+        link = dados['link']
+        filename = dados['filename']
+        
+        if escolha not in ['1','2']:
+            bot.send_message(chat_id, 'Opção Indisponivel')
+            return    
+        
+        if escolha == '1':
+            msg = bot.send_message(chat_id, 'Digite seu endereço de E-mail: ')
+            
+            bot.register_next_step_handler(msg, enviar_video_via_email, user_data[chat_id])
+        if escolha == '2':
+            caminho = download_video(link, filename)
+            
+            link_download = upload_to_pixeldrain(caminho)
+            
+            bot.send_message(chat_id, f'Link para donwnload: <a href="{link_download}">Clique Aqui</a>\n\nPrazo de 60 dias para download', parse_mode='HTML')
+            
+            apagar_arquivos(caminho)
+            
+            # limpar dados
+            user_data.pop(chat_id, None)    
+        
+    def enviar_video_via_email(message, dados):
+        email = message.text.strip()
+        chat_id = message.chat.id
+        
+        link = dados['link']
+        filename = dados['filename']
+        
+        if not re.match(r"[^@]+@[^@]+\.[^@]+", email):
+            bot.send_message(chat_id, "Email inválido. Por favor, tente novamente:")
+            return
+        
+        caminho = download_video(link, filename)
+        
+        try:
+            enviar_email(email, caminho, filename)
+            
+            bot.send_message(chat_id, 'Video enviado com sucesso')
+        except:
+            bot.send_message(chat_id, f'Erro ao enviar email para: {email}')
+            
+        
+        apagar_arquivos(caminho)
+        
         
     @bot.callback_query_handler(func=lambda call: True)
     def callback_query(call):
@@ -65,17 +117,10 @@ def bot():
                 print('o usuario pediu a opcao video')
                 log.info('o usuario pediu a opcao video')                
                 
-                caminho = download_video(link, filename)
+                bot.send_message(chat_id, '<b>Escolha por onde você quer receber o video:</b>\n<b>1 - Email</b> (Limite de 25mb)\n<b>2 - Link de Download</b> (Limite de 1GB)', parse_mode='HTML')
                 
-                link_video = upload_file(caminho)
-                
-                if link_video:
-                    bot.send_message(chat_id, f'Link para upload do video: {link_video}')
-                else:
-                    bot.send_message(chat_id, 'Erro ao baixar, tenta novamente')
-                    
-                apagar_arquivos(caminho)
-                
+                bot.register_next_step_handler(call.message, processar_escolha ,user_data[chat_id])
+                                
             if call.data == "option_cancel":
                 print('usuario cancelou o download')
                 log.info('usuario cancelou o download')
@@ -89,9 +134,7 @@ def bot():
             except:
                 print('mensagem não deletada')
                 log.info('mensagem não deletada')
-            
-            # limpa os dados do usuarios
-            user_data.pop(chat_id, None)    
+         
         except Exception as e:
             log.info(e)
             print(e)
