@@ -1412,3 +1412,181 @@ telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsucc
  14/04/2025 12:54:46 PM - INFO - O_mentor_OCULTO_de_Raiam_Santos__M_rio_Schwartzman_: https://youtu.be/kqCnUgdnYUE?si=HW0EYvoeoTezlmpe
  14/04/2025 12:54:49 PM - INFO - o usuario pediu a opcao video
  14/04/2025 12:55:31 PM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\video\O_mentor_OCULTO_de_Raiam_Santos__M_rio_Schwartzman_.m4a
+ 15/04/2025 10:37:15 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 15/04/2025 10:37:15 AM - INFO - bot chamado
+ 15/04/2025 10:48:38 AM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 401. Description: Unauthorized
+ 15/04/2025 10:48:38 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1073, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 109, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 649, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 623, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 321, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 401. Description: Unauthorized
+
+ 15/04/2025 10:48:38 AM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 401. Description: Unauthorized
+ 15/04/2025 10:48:38 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1073, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 109, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 649, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 623, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 321, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 401. Description: Unauthorized
+
+ 15/04/2025 10:48:39 AM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 401. Description: Unauthorized
+ 15/04/2025 10:48:39 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1073, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 109, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 649, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 623, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 321, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 401. Description: Unauthorized
+
+ 15/04/2025 10:48:40 AM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 401. Description: Unauthorized
+ 15/04/2025 10:48:40 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1073, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 109, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 649, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 623, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 321, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 401. Description: Unauthorized
+
+ 15/04/2025 10:48:42 AM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 401. Description: Unauthorized
+ 15/04/2025 10:48:42 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1073, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 109, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 649, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 623, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 321, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 401. Description: Unauthorized
+
+ 15/04/2025 10:48:46 AM - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 401. Description: Unauthorized
+ 15/04/2025 10:48:46 AM - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 1073, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 109, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 649, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\__init__.py", line 623, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 321, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\paulo.welton\AppData\Local\Programs\Python\Python39\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 401. Description: Unauthorized
+
+ 15/04/2025 10:49:04 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 15/04/2025 10:49:04 AM - INFO - bot chamado
+ 15/04/2025 10:49:04 AM - ERROR - Error: remove_webhook() got an unexpected keyword argument 'drop_pending_updates'
+ 15/04/2025 10:49:04 AM - INFO - tarefa finalizada
+
+ 15/04/2025 10:49:04 AM - INFO - bot chamado
+ 15/04/2025 10:49:29 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 15/04/2025 10:49:29 AM - INFO - bot chamado
+ 15/04/2025 10:49:29 AM - ERROR - Error: remove_webhook() got an unexpected keyword argument 'drop_pending_updates'
+ 15/04/2025 10:49:29 AM - INFO - tarefa finalizada
+
+ 15/04/2025 10:49:29 AM - INFO - bot chamado
+ 15/04/2025 10:49:38 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 15/04/2025 10:49:38 AM - INFO - bot chamado
+ 15/04/2025 10:50:51 AM - INFO - usuario esta tentando fazer download
+ 15/04/2025 10:50:53 AM - INFO - Young_-_Vacations__Official_Lyric_Video_: https://youtu.be/nK61uvq5tX4?si=newKRrVKa1XfPKKi
+ 15/04/2025 10:50:55 AM - INFO - usuario pediu a opcao audio
+ 15/04/2025 10:50:56 AM - INFO - usuario pediu a opcao audio
+ 15/04/2025 10:50:56 AM - INFO - baixando audio...
+ 15/04/2025 10:50:56 AM - INFO - baixando audio...
+ 15/04/2025 10:50:59 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\Young_-_Vacations__Official_Lyric_Video_.m4a
+ 15/04/2025 10:51:00 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\Young_-_Vacations__Official_Lyric_Video_.m4a
+ 15/04/2025 10:51:08 AM - INFO - audio enviado
+
+ 15/04/2025 10:51:08 AM - INFO - audio enviado
+
+ 15/04/2025 10:51:08 AM - INFO - mensagem não deletada
+ 15/04/2025 10:58:38 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 15/04/2025 10:58:38 AM - INFO - bot chamado
+ 15/04/2025 10:59:03 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 15/04/2025 10:59:03 AM - INFO - bot chamado
+ 15/04/2025 11:00:27 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 15/04/2025 11:00:27 AM - INFO - bot chamado
+ 15/04/2025 11:00:58 AM - INFO - usuario esta tentando fazer download
+ 15/04/2025 11:01:00 AM - INFO - Intro: https://youtu.be/e8yxF-0qk8o?si=Vn5Czp9JBh072uvY
+ 15/04/2025 11:01:06 AM - INFO - usuario pediu a opcao audio
+ 15/04/2025 11:01:06 AM - INFO - baixando audio...
+ 15/04/2025 11:01:08 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\Intro.m4a
+ 15/04/2025 11:01:12 AM - INFO - audio enviado
+
+ 15/04/2025 11:14:31 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 15/04/2025 11:14:31 AM - INFO - bot chamado
