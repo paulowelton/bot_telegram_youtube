@@ -56,6 +56,7 @@ def download_audio(link, filename):
     except Exception as e:
         
         log.error(f'erro ao baixar video: {e}')
+        print(f'erro ao baixar video: {e}')
         
         return False    
 if __name__ == '__main__':

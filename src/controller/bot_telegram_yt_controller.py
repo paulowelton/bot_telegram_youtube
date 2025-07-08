@@ -14,6 +14,8 @@ try:
 except Exception as e:
     
     log.error(f'Error: {e}')
+    print(f'Error: {e}')
     
 finally:
     log.info('tarefa finalizada\n')
+    print('tarefa finalizada\n')

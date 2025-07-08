@@ -40,4 +40,5 @@ def link_youtube_handler(bot):
             
         except Exception as e:
             log.error(e)
+            print(e)
             bot.send_message(message.chat.id, "O Download falhou, tente novamente...")
