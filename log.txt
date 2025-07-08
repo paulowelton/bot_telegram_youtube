@@ -1590,3 +1590,250 @@ telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsucc
  15/04/2025 11:14:31 AM - INFO - BOT TELEGRAM YOUTUBE
 
  15/04/2025 11:14:31 AM - INFO - bot chamado
+ 15/04/2025 11:21:46 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 15/04/2025 11:21:46 AM - INFO - bot chamado
+ 28/04/2025 10:15:21 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 28/04/2025 10:15:21 AM - INFO - bot chamado
+ 28/04/2025 10:15:39 AM - INFO - usuario esta tentando fazer download
+ 28/04/2025 10:15:40 AM - INFO - Lovers_Rock: https://youtu.be/j_sG_Juncn8?si=thlYBA0mDEfwJllE
+ 28/04/2025 10:15:43 AM - INFO - usuario pediu a opcao audio
+ 28/04/2025 10:15:43 AM - INFO - baixando audio...
+ 28/04/2025 10:15:45 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\Lovers_Rock.m4a
+ 28/04/2025 10:15:56 AM - INFO - audio enviado
+
+ 28/04/2025 10:16:02 AM - INFO - usuario esta tentando fazer download
+ 28/04/2025 10:16:03 AM - INFO - TV_Girl_-_Blue_Hair: https://youtu.be/PzIXNqpCug0?si=_CoCn5XbFksxqxOp
+ 28/04/2025 10:16:23 AM - INFO - usuario pediu a opcao audio
+ 28/04/2025 10:16:23 AM - INFO - baixando audio...
+ 28/04/2025 10:16:25 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\TV_Girl_-_Blue_Hair.m4a
+ 28/04/2025 10:16:41 AM - INFO - audio enviado
+
+ 28/04/2025 10:16:43 AM - INFO - usuario esta tentando fazer download
+ 28/04/2025 10:16:45 AM - INFO - Lil_Tecca_-_Dark_Thoughts__Official_Video_: https://youtu.be/Xtq_A2NnHKQ?si=GQVn12G8MPKnXluf
+ 28/04/2025 10:16:47 AM - INFO - usuario pediu a opcao audio
+ 28/04/2025 10:16:48 AM - INFO - baixando audio...
+ 28/04/2025 10:16:49 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\Lil_Tecca_-_Dark_Thoughts__Official_Video_.m4a
+ 28/04/2025 10:16:59 AM - INFO - audio enviado
+
+ 28/04/2025 10:17:15 AM - INFO - usuario esta tentando fazer download
+ 28/04/2025 10:17:17 AM - INFO - Matu__-_Like_This___Bonus_Track_: https://youtu.be/81z0TwCVyfs?si=H1cz1yEzZyFIKjij
+ 28/04/2025 10:17:24 AM - INFO - usuario pediu a opcao audio
+ 28/04/2025 10:17:24 AM - INFO - baixando audio...
+ 28/04/2025 10:17:25 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\Matu__-_Like_This___Bonus_Track_.m4a
+ 28/04/2025 10:17:36 AM - INFO - audio enviado
+
+ 28/04/2025 10:17:37 AM - INFO - usuario esta tentando fazer download
+ 28/04/2025 10:17:39 AM - INFO - 02_niLL_-_Regras_da_Loja_Part__BK___Prod__Crimenow_: https://youtu.be/-jyMoCaTW_Q?si=bu1dPjHa4hRiT11T
+ 28/04/2025 10:17:41 AM - INFO - usuario pediu a opcao audio
+ 28/04/2025 10:17:41 AM - INFO - baixando audio...
+ 28/04/2025 10:17:43 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\02_niLL_-_Regras_da_Loja_Part__BK___Prod__Crimenow_.m4a
+ 28/04/2025 10:17:55 AM - INFO - audio enviado
+
+ 28/04/2025 10:18:12 AM - INFO - usuario esta tentando fazer download
+ 28/04/2025 10:18:14 AM - INFO - Los_Hermanos_-__ltimo_Romance: https://youtu.be/6w3uAKabfFg?si=B_yzZnzyLjYcQ4ga
+ 28/04/2025 10:18:16 AM - INFO - usuario pediu a opcao audio
+ 28/04/2025 10:18:16 AM - INFO - baixando audio...
+ 28/04/2025 10:18:18 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\Los_Hermanos_-__ltimo_Romance.m4a
+ 28/04/2025 10:18:32 AM - INFO - audio enviado
+
+ 30/05/2025 10:54:34 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 30/05/2025 10:54:34 AM - INFO - bot chamado
+ 30/05/2025 10:55:00 AM - INFO - usuario esta tentando fazer download
+ 30/05/2025 10:55:02 AM - INFO - BK___prod__Paulo_DK__-_Am_m__Am_m__Visualizer_: https://youtu.be/NE0NnTFohDU?si=b-OcAygI8Tj6mERR
+ 30/05/2025 10:55:06 AM - INFO - usuario pediu a opcao audio
+ 30/05/2025 10:55:06 AM - INFO - baixando audio...
+ 30/05/2025 10:55:09 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\BK___prod__Paulo_DK__-_Am_m__Am_m__Visualizer_.m4a
+ 30/05/2025 10:55:16 AM - INFO - audio enviado
+
+ 30/05/2025 11:09:13 AM - INFO - usuario esta tentando fazer download
+ 30/05/2025 11:09:15 AM - INFO - FBC_-_Se_Eu_N_o_Te_Cantar__Clipe_Oficial_: https://youtu.be/3mclQ4V28JQ?si=GMaEiLah7vRseZkD
+ 30/05/2025 11:09:20 AM - INFO - usuario pediu a opcao audio
+ 30/05/2025 11:09:20 AM - INFO - baixando audio...
+ 30/05/2025 11:09:23 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\FBC_-_Se_Eu_N_o_Te_Cantar__Clipe_Oficial_.m4a
+ 30/05/2025 11:09:31 AM - INFO - audio enviado
+
+ 17/06/2025 09:01:25 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 17/06/2025 09:01:25 AM - INFO - bot chamado
+ 17/06/2025 09:11:07 AM - INFO - usuario esta tentando fazer download
+ 17/06/2025 09:11:08 AM - INFO - Teto_-_YES_OR_NO: https://youtu.be/21XWVPwMcas?si=kZFj01l3TSPoHZey
+ 17/06/2025 09:11:14 AM - INFO - usuario pediu a opcao audio
+ 17/06/2025 09:11:15 AM - INFO - baixando audio...
+ 17/06/2025 09:11:19 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\Teto_-_YES_OR_NO.m4a
+ 17/06/2025 09:11:27 AM - INFO - audio enviado
+
+ 17/06/2025 09:12:08 AM - INFO - usuario esta tentando fazer download
+ 17/06/2025 09:12:10 AM - INFO - Pra_Ningu_m_Se_Esconder: https://youtu.be/EM3rQzbQ5yU?si=IVfA40NM4zqowTTJ
+ 17/06/2025 09:12:12 AM - INFO - usuario pediu a opcao audio
+ 17/06/2025 09:12:13 AM - INFO - baixando audio...
+ 17/06/2025 09:12:18 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\Pra_Ningu_m_Se_Esconder.m4a
+ 17/06/2025 09:12:28 AM - INFO - audio enviado
+
+ 17/06/2025 09:12:41 AM - INFO - usuario esta tentando fazer download
+ 17/06/2025 09:12:43 AM - INFO - Todo_Errado: https://youtu.be/95hoOsyMs3E?si=Hn0Ull5xKykglfvC
+ 17/06/2025 09:12:45 AM - INFO - usuario pediu a opcao audio
+ 17/06/2025 09:12:45 AM - INFO - baixando audio...
+ 17/06/2025 09:12:49 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\Todo_Errado.m4a
+ 17/06/2025 09:12:58 AM - INFO - audio enviado
+
+ 17/06/2025 09:13:01 AM - INFO - usuario esta tentando fazer download
+ 17/06/2025 09:13:02 AM - INFO - Voc__N_o_Me_Ensinou_A_Te_Esquecer: https://youtu.be/wwI12iiUsRY?si=gwesT-ut7jnTjC-Y
+ 17/06/2025 09:13:07 AM - INFO - usuario pediu a opcao audio
+ 17/06/2025 09:13:08 AM - INFO - baixando audio...
+ 17/06/2025 09:13:12 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\Voc__N_o_Me_Ensinou_A_Te_Esquecer.m4a
+ 17/06/2025 09:13:22 AM - INFO - audio enviado
+
+ 17/06/2025 09:13:27 AM - INFO - usuario esta tentando fazer download
+ 17/06/2025 09:13:28 AM - INFO - N_A_D_A_B_O_M_: https://youtu.be/4Zme4KInm2I?si=NlYyjc2pEiE4doy_
+ 17/06/2025 09:13:35 AM - INFO - usuario pediu a opcao audio
+ 17/06/2025 09:13:36 AM - INFO - baixando audio...
+ 17/06/2025 09:13:40 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\N_A_D_A_B_O_M_.m4a
+ 17/06/2025 09:13:52 AM - INFO - audio enviado
+
+ 17/06/2025 09:13:54 AM - INFO - usuario esta tentando fazer download
+ 17/06/2025 09:13:56 AM - INFO - SURF: https://youtu.be/oz0a5ouYY3A?si=LqnOBIAy7LK5Rvu8
+ 17/06/2025 09:13:59 AM - INFO - usuario pediu a opcao audio
+ 17/06/2025 09:13:59 AM - INFO - usuario pediu a opcao audio
+ 17/06/2025 09:13:59 AM - INFO - baixando audio...
+ 17/06/2025 09:13:59 AM - INFO - baixando audio...
+ 17/06/2025 09:14:03 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\SURF.m4a
+ 17/06/2025 09:14:04 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\SURF.m4a
+ 17/06/2025 09:14:10 AM - INFO - audio enviado
+
+ 17/06/2025 09:14:13 AM - INFO - audio enviado
+
+ 17/06/2025 09:14:13 AM - INFO - mensagem não deletada
+ 17/06/2025 09:15:56 AM - INFO - usuario esta tentando fazer download
+ 17/06/2025 09:15:57 AM - INFO - ESTRESSE: https://youtu.be/rcMoI-p3-3A?si=Ytn4LexYc4IpKcg0
+ 17/06/2025 09:16:01 AM - INFO - usuario pediu a opcao audio
+ 17/06/2025 09:16:01 AM - INFO - baixando audio...
+ 17/06/2025 09:16:04 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\ESTRESSE.m4a
+ 17/06/2025 09:16:11 AM - INFO - audio enviado
+
+ 17/06/2025 09:16:16 AM - INFO - usuario esta tentando fazer download
+ 17/06/2025 09:16:17 AM - INFO - _LTIMA_VEZ: https://youtu.be/ATrFio56WDc?si=whC0VX1q4XaNqz6S
+ 17/06/2025 09:16:22 AM - INFO - usuario pediu a opcao audio
+ 17/06/2025 09:16:22 AM - INFO - baixando audio...
+ 17/06/2025 09:16:25 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\_LTIMA_VEZ.m4a
+ 17/06/2025 09:16:33 AM - INFO - audio enviado
+
+ 17/06/2025 09:17:14 AM - INFO - usuario esta tentando fazer download
+ 17/06/2025 09:17:16 AM - INFO - 06__Baco_Exu_do_Blues_-_Samba_in_Paris__ft__Gloria_Groove_: https://youtu.be/4iKtTmnHojU?si=4rWluE38Xl120Xcw
+ 17/06/2025 09:17:19 AM - INFO - usuario pediu a opcao audio
+ 17/06/2025 09:17:20 AM - INFO - baixando audio...
+ 17/06/2025 09:17:24 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\06__Baco_Exu_do_Blues_-_Samba_in_Paris__ft__Gloria_Groove_.m4a
+ 17/06/2025 09:17:37 AM - INFO - audio enviado
+
+ 03/07/2025 09:21:47 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 03/07/2025 09:21:47 AM - INFO - bot chamado
+ 03/07/2025 09:54:22 AM - INFO - usuario esta tentando fazer download
+ 03/07/2025 09:54:23 AM - INFO - Yunk_Vino_-_Leans_Pt_2: https://youtu.be/nK0g70RVjtU?si=KbRCXIAtIfQn1vut
+ 03/07/2025 09:54:28 AM - INFO - usuario pediu a opcao audio
+ 03/07/2025 09:54:28 AM - INFO - baixando audio...
+ 03/07/2025 09:54:31 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\Yunk_Vino_-_Leans_Pt_2.m4a
+ 03/07/2025 09:54:39 AM - INFO - audio enviado
+
+ 03/07/2025 09:55:20 AM - INFO - usuario esta tentando fazer download
+ 03/07/2025 09:55:21 AM - INFO - Yunk_Vino-_Campari__LETRA_: https://youtu.be/1eD5d4fid-Q?si=lImiwAnh6L6OpVAK
+ 03/07/2025 09:55:30 AM - INFO - usuario pediu a opcao audio
+ 03/07/2025 09:55:31 AM - INFO - baixando audio...
+ 03/07/2025 09:55:34 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\Yunk_Vino-_Campari__LETRA_.m4a
+ 03/07/2025 09:55:39 AM - INFO - audio enviado
+
+ 03/07/2025 09:59:25 AM - INFO - usuario esta tentando fazer download
+ 03/07/2025 09:59:26 AM - INFO - Gilsons_-_Love_Love__Lyric_v_deo_: https://youtu.be/2EGXgmoYtgA?si=59x8Nu8z1VwryQ7a
+ 03/07/2025 09:59:37 AM - INFO - usuario pediu a opcao audio
+ 03/07/2025 09:59:37 AM - INFO - baixando audio...
+ 03/07/2025 09:59:41 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\Gilsons_-_Love_Love__Lyric_v_deo_.m4a
+ 03/07/2025 09:59:50 AM - INFO - audio enviado
+
+ 03/07/2025 09:59:56 AM - INFO - usuario esta tentando fazer download
+ 03/07/2025 09:59:58 AM - INFO - Baco_Exu_do_Blues_-_999__Prod__Mazili___WebClipe_: https://youtu.be/K5yGZRjXzgM?si=8v7-qieEF_Fgqx6J
+ 03/07/2025 10:00:11 AM - INFO - usuario pediu a opcao audio
+ 03/07/2025 10:00:11 AM - INFO - baixando audio...
+ 03/07/2025 10:00:15 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\Baco_Exu_do_Blues_-_999__Prod__Mazili___WebClipe_.m4a
+ 03/07/2025 10:00:25 AM - INFO - audio enviado
+
+ 03/07/2025 10:00:27 AM - INFO - usuario esta tentando fazer download
+ 03/07/2025 10:00:28 AM - INFO - E_Eu_N_o_Obedeci: https://youtu.be/HZ6gRfRVw3s?si=ETgn3U1TuTTr3gAz
+ 03/07/2025 10:00:32 AM - INFO - usuario pediu a opcao audio
+ 03/07/2025 10:00:32 AM - INFO - baixando audio...
+ 03/07/2025 10:00:37 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\E_Eu_N_o_Obedeci.m4a
+ 03/07/2025 10:00:47 AM - INFO - audio enviado
+
+ 03/07/2025 10:01:12 AM - INFO - usuario esta tentando fazer download
+ 03/07/2025 10:01:14 AM - INFO - 4__Solo__Videoclipe_oficial_: https://youtu.be/6jojd0r9_rk?si=DgOIXFUoWz8c7UMA
+ 03/07/2025 10:01:28 AM - INFO - usuario pediu a opcao audio
+ 03/07/2025 10:01:28 AM - INFO - baixando audio...
+ 03/07/2025 10:01:31 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\4__Solo__Videoclipe_oficial_.m4a
+ 03/07/2025 10:01:38 AM - INFO - audio enviado
+
+ 03/07/2025 10:01:40 AM - INFO - usuario esta tentando fazer download
+ 03/07/2025 10:01:42 AM - INFO - 3___Djonga_-_Esquim_: https://youtu.be/0vWoKiCmhn4?si=5VmhqcqhDSJlfmRW
+ 03/07/2025 10:02:40 AM - INFO - usuario pediu a opcao audio
+ 03/07/2025 10:02:41 AM - INFO - baixando audio...
+ 03/07/2025 10:02:45 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\3___Djonga_-_Esquim_.m4a
+ 03/07/2025 10:02:55 AM - INFO - audio enviado
+
+ 03/07/2025 10:03:51 AM - INFO - usuario esta tentando fazer download
+ 03/07/2025 10:03:52 AM - WARNING - ANDROID_VR client returned: This video is not available
+ 03/07/2025 10:03:52 AM - WARNING - Switching to client: TV
+ 03/07/2025 10:03:59 AM - WARNING - ANDROID_VR client returned: This video is not available
+ 03/07/2025 10:03:59 AM - WARNING - Switching to client: TV
+ 03/07/2025 10:04:01 AM - INFO - _Here_Comes_a_Thought____Steven_Universe___Cartoon_Network: https://youtu.be/dHg50mdODFM?si=QsD_ySSbF-KJHHKQ
+ 03/07/2025 10:04:07 AM - INFO - usuario pediu a opcao audio
+ 03/07/2025 10:04:08 AM - INFO - baixando audio...
+ 03/07/2025 10:04:08 AM - WARNING - ANDROID_VR client returned: This video is not available
+ 03/07/2025 10:04:08 AM - WARNING - Switching to client: TV
+ 03/07/2025 10:04:14 AM - ERROR - erro ao baixar video: get_throttling_function_name: could not find match for multiple in https://youtube.com/s/player/e12fbea4/player_ias.vflset/en_US/base.js
+ 03/07/2025 10:10:16 AM - INFO - usuario esta tentando fazer download
+ 03/07/2025 10:10:18 AM - INFO - Caio_Ocean____F__meu_levado_: https://youtu.be/jsOU47lsmRg?si=PEnqubBZ3L4J7mVv
+ 03/07/2025 10:10:22 AM - INFO - usuario pediu a opcao audio
+ 03/07/2025 10:10:23 AM - INFO - baixando audio...
+ 03/07/2025 10:10:25 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\Caio_Ocean____F__meu_levado_.m4a
+ 03/07/2025 10:10:30 AM - INFO - audio enviado
+
+ 03/07/2025 10:11:02 AM - INFO - usuario esta tentando fazer download
+ 03/07/2025 10:11:04 AM - INFO - Filipe_Ret_-_Acima_de_Mim_S__Deus___Clipe_Oficial_: https://youtu.be/UYKrwYJzZFw?si=A71ifN5KFU_jk4U3
+ 03/07/2025 10:11:11 AM - INFO - usuario pediu a opcao audio
+ 03/07/2025 10:11:11 AM - INFO - baixando audio...
+ 03/07/2025 10:11:14 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\Filipe_Ret_-_Acima_de_Mim_S__Deus___Clipe_Oficial_.m4a
+ 03/07/2025 10:11:20 AM - INFO - audio enviado
+
+ 03/07/2025 10:12:24 AM - INFO - usuario pediu a opcao audio
+ 03/07/2025 10:12:24 AM - INFO - baixando audio...
+ 03/07/2025 10:12:27 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\Filipe_Ret_-_Acima_de_Mim_S__Deus___Clipe_Oficial_.m4a
+ 03/07/2025 10:12:33 AM - INFO - audio enviado
+
+ 03/07/2025 10:12:51 AM - INFO - usuario esta tentando fazer download
+ 03/07/2025 10:12:52 AM - WARNING - ANDROID_VR client returned: This video is not available
+ 03/07/2025 10:12:52 AM - WARNING - Switching to client: TV
+ 03/07/2025 10:12:55 AM - WARNING - ANDROID_VR client returned: This video is not available
+ 03/07/2025 10:12:55 AM - WARNING - Switching to client: TV
+ 03/07/2025 10:12:57 AM - INFO - _Here_Comes_a_Thought____Steven_Universe___Cartoon_Network: https://youtu.be/dHg50mdODFM?si=QsD_ySSbF-KJHHKQ
+ 03/07/2025 10:13:02 AM - INFO - usuario pediu a opcao audio
+ 03/07/2025 10:13:02 AM - INFO - baixando audio...
+ 03/07/2025 10:13:03 AM - WARNING - ANDROID_VR client returned: This video is not available
+ 03/07/2025 10:13:03 AM - WARNING - Switching to client: TV
+ 03/07/2025 10:13:08 AM - ERROR - erro ao baixar video: get_throttling_function_name: could not find match for multiple in https://youtube.com/s/player/e12fbea4/player_ias.vflset/en_US/base.js
+ 03/07/2025 10:23:05 AM - INFO - BOT TELEGRAM YOUTUBE
+
+ 03/07/2025 10:23:05 AM - INFO - bot chamado
+ 03/07/2025 10:23:07 AM - INFO - usuario esta tentando fazer download
+ 03/07/2025 10:23:09 AM - INFO - DERXAN_-_OQ_C__FEZ__part__MALU: https://youtu.be/9MHmmPSsoYs?si=CaboNY3Cxgxu9QfE
+ 03/07/2025 10:23:12 AM - INFO - usuario pediu a opcao audio
+ 03/07/2025 10:23:12 AM - INFO - baixando audio...
+ 03/07/2025 10:23:15 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\DERXAN_-_OQ_C__FEZ__part__MALU.m4a
+ 03/07/2025 10:23:22 AM - INFO - audio enviado
+
+ 03/07/2025 10:24:11 AM - INFO - usuario esta tentando fazer download
+ 03/07/2025 10:24:13 AM - INFO - Derxan_-_ELIS_REGINA_part__MALU: https://youtu.be/C3j-UM72vLk?si=a8Vo1GoER74VMEdC
+ 03/07/2025 10:24:16 AM - INFO - usuario pediu a opcao audio
+ 03/07/2025 10:24:16 AM - INFO - baixando audio...
+ 03/07/2025 10:24:19 AM - INFO - caminho: C:\Users\paulo.welton\Desktop\bot_telegram_youtube\audio\Derxan_-_ELIS_REGINA_part__MALU.m4a
+ 03/07/2025 10:24:25 AM - INFO - audio enviado
+
